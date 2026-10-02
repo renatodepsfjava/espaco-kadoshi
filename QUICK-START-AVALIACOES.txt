@@ -1,0 +1,102 @@
+═══════════════════════════════════════════════════════════════════
+  ⚡ QUICK START: Atualizar Avaliações do Google em 5 Minutos
+═══════════════════════════════════════════════════════════════════
+
+📍 PASSO 1: Abrir o Google (2 min)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Acesse: https://g.co/kgs/HJxH4Ac (ou busque no Google Maps)
+2. Clique em "Avaliações"
+3. Veja: 5.0 ★★★★★ (21 avaliações)
+
+📋 PASSO 2: Escolher 3 Avaliações (1 min)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Escolha as que têm:
+✓ 5 estrelas
+✓ Texto longo (2+ linhas)
+✓ Elogios específicos
+
+Anote:
+→ Texto completo
+→ Nome do cliente
+→ Número de estrelas
+
+✏️ PASSO 3: Editar o HTML (2 min)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Abra: E:\Workspace\espaco-kadoshi\index.html
+2. Busque por: <section id="depoimentos"
+3. Substitua CADA card:
+
+   <div class="depoimento-card">
+       <div class="depoimento-estrelas">★★★★★</div>
+       <p class="depoimento-texto">"[COLE O TEXTO AQUI]"</p>
+       <p class="depoimento-autor">— [Nome]</p>
+   </div>
+
+4. Atualize o rating:
+   <span class="rating-numero">5.0</span>
+   <span class="rating-total">(21 avaliações no Google)</span>
+
+✅ PASSO 4: Salvar e Testar
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Salve o arquivo (Ctrl + S)
+2. Abra index.html no navegador
+3. Role até "O que dizem sobre nós"
+4. Verifique se está tudo certo
+
+═══════════════════════════════════════════════════════════════════
+                          📌 EXEMPLO REAL
+═══════════════════════════════════════════════════════════════════
+
+DO GOOGLE:
+┌────────────────────────────────────────────────────────┐
+│ ★★★★★  Maria Santos - há 2 meses                      │
+│ "Adorei o atendimento! As meninas são super           │
+│  atenciosas e o serviço é impecável."                 │
+└────────────────────────────────────────────────────────┘
+
+NO HTML:
+<div class="depoimento-card">
+    <div class="depoimento-estrelas">★★★★★</div>
+    <p class="depoimento-texto">"Adorei o atendimento! As meninas são super atenciosas e o serviço é impecável."</p>
+    <p class="depoimento-autor">— Maria Santos</p>
+</div>
+
+═══════════════════════════════════════════════════════════════════
+                      🎯 CHECKLIST FINAL
+═══════════════════════════════════════════════════════════════════
+
+[ ] Copiei avaliações REAIS do Google
+[ ] Colei no lugar certo do HTML
+[ ] Atualizei o rating (5.0 e número de avaliações)
+[ ] Testei no navegador
+[ ] Está tudo OK!
+
+═══════════════════════════════════════════════════════════════════
+                         🆘 AJUDA RÁPIDA
+═══════════════════════════════════════════════════════════════════
+
+❓ Não acho o Google do negócio?
+→ Busque: "Espaço de Beleza Kadoshi Juiz de Fora"
+
+❓ Onde colar as avaliações?
+→ Arquivo: index.html
+→ Procure: <section id="depoimentos">
+
+❓ Quantas avaliações usar?
+→ Ideal: 3 avaliações
+→ Máximo: 6 avaliações
+
+❓ Guia completo?
+→ Leia: INSTRUCOES-AVALIACOES.md
+
+═══════════════════════════════════════════════════════════════════
+                     🎉 PRONTO EM 5 MINUTOS!
+═══════════════════════════════════════════════════════════════════
+
+Seguindo esses passos, você terá:
+✅ Avaliações reais do Google
+✅ Site mais profissional
+✅ Maior credibilidade
+✅ Mais conversões!
+
+═══════════════════════════════════════════════════════════════════
