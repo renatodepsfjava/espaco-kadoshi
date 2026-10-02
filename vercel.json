@@ -1,6 +1,8 @@
 {
+  "buildCommand": "echo 'Build concluido'",
+  "framework": null,
   "functions": {
-    "api/*.js": {
+    "api/**/*.js": {
       "runtime": "nodejs24.x"
     }
   }
