@@ -127,36 +127,23 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // ===================================================
-// 🌼 EFEITO DE TELA DE ENTRADA
+// 🌼 FADE-IN DAS SEÇÕES (ativado imediatamente)
 // ===================================================
 window.addEventListener("load", () => {
-    const flor = document.querySelector(".flor-intro");
-    const tela = document.getElementById("tela-inicial");
+    // Ativa fade-in das seções
+    document.querySelectorAll('section, .footer, .header').forEach(el => {
+        el.classList.add('fade-prepare');
+    });
 
-    // Aparece flor
-    flor.classList.add("aparecer");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+            }
+        });
+    }, {threshold: 0.18});
 
-    setTimeout(() => {
-        tela.style.opacity = "0";
-        setTimeout(() => {
-            tela.remove();
-
-            // Ativa fade-in de novo após remover intro
-            document.querySelectorAll('section, .footer, .header').forEach(el => {
-                el.classList.add('fade-prepare');
-            });
-
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in');
-                    }
-                });
-            }, {threshold: 0.18});
-
-            document.querySelectorAll('.fade-prepare').forEach(el => observer.observe(el));
-        }, 800); // tempo do fade-out
-    }, 4000); // tempo exibindo flor
+    document.querySelectorAll('.fade-prepare').forEach(el => observer.observe(el));
 });
 
 // ===================================================
